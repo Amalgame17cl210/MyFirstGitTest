@@ -2,7 +2,7 @@
       
       integer rows 
       PARAMETER(rows=120)
-      character filename
+      character(8) filename
       PARAMETER(filename='TOTOJOJO')
       open(unit=1,file= filename)
       
