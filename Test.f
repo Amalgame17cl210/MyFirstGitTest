@@ -2,7 +2,9 @@
       
       integer rows 
       PARAMETER(rows=120)
-      open(unit=1,file='TOTOJOJO')
+      character filename
+      PARAMETER(filename='TOTOJOJO')
+      open(unit=1,file= filename)
       
       if (rows.le.0) then
       GOTO 100
