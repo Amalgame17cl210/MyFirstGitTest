@@ -1,8 +1,11 @@
       program toto
       
       integer rows 
+      
       PARAMETER(rows=120)
-      open(unit=1,file='TOTOJOJO')
+      character fichiername 
+      PARAMETER(fichiername='TOTOJOJO')
+      open(unit=1,file=fichiername)
       
       if (rows.le.0) then
       GOTO 100
